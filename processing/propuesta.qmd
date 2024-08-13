@@ -1,0 +1,11 @@
+---
+title: "Propuesta abstract"
+format: html
+editor: visual
+---
+
+### Lo justo y lo merecido: aproximaciones a las creencias de estudiantes de enseñanza básica y media
+
+¿Cómo se expresa la meritocracia en el contexto escolar chileno? La escuela se constituye como un espacio de socialización de la meritocracia, en donde se consolida la idea del mérito (esfuerzo y talento) como criterio de distribución de los recursos en la sociedad. Así, los/as estudiantes movilizan normativamente conceptos como la justicia y el merecimiento a la hora de distribuir recursos, los cuales dentro del contexto escolar son entendidos como las notas que estos reciben. De ese modo, la sensación de justicia se vuelve central para evaluar la desigualdad percibida y preferida por los/as estudiantes y, al mismo tiempo, se tiene que su baja sensación en las notas se asocia negativamente con las conductas cívicas promovidas por la formación ciudadana en la escuela. Alternativamente, aparecen otras explicaciones definidas por criterios no-meritocráticos, entendidos como factores externos al mérito que explicarían el logro individual. Los cuales permiten reconocer un escenario desigual de oportunidades y dan pie al cuestionamiento del esfuerzo y el talento como atribuciones inherentes a las personas, por ende, se reconoce que estas pueden ser modificables en el tiempo. 
+
+Este estudio se propone ser un primer acercamiento hacia las creencias de los/as estudiantes chilenos/as en tanto criterios de mérito individual, no meritocráticos, de justicia y de ciudadanía. Para, de ese modo, poder observar (1) *en qué medida los estudiantes creen en la meritocracia*, (2) *su relación con la sensación de justicia en el contexto escolar* y (3) *cómo lo anterior afecta en su participación política actual y futura*. 
