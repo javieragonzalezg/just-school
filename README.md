@@ -1,2 +1,2 @@
-# meritocracia-justicia-ciudadania
+# just-school
  
