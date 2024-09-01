@@ -3,7 +3,8 @@ format:
   html: 
     code-fold: true
     html-math-method: katex
-pdf: 
+    self-contained: true
+  pdf: 
     geometry: 
       - top=30mm
       - left=20mm
@@ -40,7 +41,7 @@ author:
       - ref: 2
   - name: Andreas Laffert
     orcid: 0000-0002-9008-2454
-    email: kevin.carrasco@ug.uchile.cl
+    email: alaffertt@estudiante.uc.cl
     affiliations:
       - ref: 4
 affiliations: 
