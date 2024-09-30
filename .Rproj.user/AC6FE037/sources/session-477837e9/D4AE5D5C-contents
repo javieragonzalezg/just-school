@@ -23,6 +23,16 @@ proc_datos <- proc_datos %>% mutate(justicia_nota = log(nota_obtenida/nota_pref)
 
 summary(proc_datos$justicia_nota)
 
+# prueba con pregunta que añade tiempo 
+proc_datos <- proc_datos %>%
+  mutate(
+    justicia_nota_tiempo = dplyr::case_when(
+      justicia_nota < 0  |notas_esfuerzo == 1 ~ "injusticia sub-recompensa",
+      justicia_nota == 0 | notas_esfuerzo == 2 ~ "justicia perfecta", 
+      justicia_nota > 0  | notas_esfuerzo == 3 ~ "injusticia sobre-recompensa" 
+    )
+  ) 
+
 proc_datos <- proc_datos %>%
   mutate(
     justicia_nota = dplyr::case_when(

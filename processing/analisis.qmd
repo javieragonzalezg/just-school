@@ -26,7 +26,7 @@ load("../input/data/proc/ola1.RData")
 
 ```{r, select, echo=FALSE}
 datos <- proc_datos %>% select(notas_esfuerzo, notas_merit,
-                               justicia_nota, genero_ES,
+                               justicia_nota, justicia_nota_tiempo, genero_ES,
                                libros_hogar, curso_estudiante,
                                educ_max, school_esfuerzo_ES, 
                                school_talento_ES,
@@ -142,6 +142,20 @@ No se observan diferencias grandes de porcentajes entre hombres y mujeres:
 #plot_
 ```
 
+Sensación de recompensa segun **tiempo** dedicado al estudio:
+
+```{r, echo=FALSE}
+tabla_cruzada_gt <- sjt.xtab(proc_datos$justicia_nota_tiempo, 
+                        proc_datos$genero_ES, 
+                        show.summary = F, 
+                        emph.total = T, 
+                         show.col.prc = T, # porcentaje columna
+                         encoding= "UTF-8")
+tabla_cruzada_gt
+```
+
+<br/>
+
 **Cuso del estudiante**:
 
 ```{r, echo=FALSE}
@@ -161,6 +175,20 @@ Si bien las diferencias por curso en cada categorías no son tan grandes (except
 -   Solo en el caso de una sensación de sub-recompensa los estudiantes de media presentan mayor frecuencia que estudiantes de básica, doblando su proporción.
 
     <br/>
+
+Sensación de recompensa segun **tiempo** dedicado al estudio:
+
+```{r, echo=FALSE}
+tabla_cruzada_ct <- sjt.xtab(proc_datos$justicia_nota_tiempo, 
+                        proc_datos$curso_estudiante, 
+                        show.summary = F, 
+                        emph.total = T, 
+                         show.col.prc = T, # porcentaje columna
+                         encoding= "UTF-8")
+tabla_cruzada_ct
+```
+
+<br/>
 
 ```{r, echo=FALSE}
 #plot_curso <- data %>% filter(justicia_nota=="justicia perfecta") %>% 
@@ -190,6 +218,22 @@ Se tiene como punto de partida que la cantidad de estudiantes con padres que pre
 
     <br/ >
 
+Sensación de recompensa segun **tiempo** dedicado al estudio:
+
+```{r, echo=FALSE}
+tabla_cruzada_et <- sjt.xtab(proc_datos$justicia_nota_tiempo, 
+                        proc_datos$educ_max, 
+                        show.summary = F, 
+                        emph.total = T, 
+                         show.col.prc = T, # porcentaje columna
+                         encoding= "UTF-8")
+tabla_cruzada_et
+
+
+```
+
+<br/>
+
 **Cantidad de libros en el hogar**:
 
 ```{r, echo=FALSE}
@@ -209,6 +253,20 @@ Se presenta que la categoría "Menos de 25 libros" es casi el doble que la categ
 -   Para el caso de la sesnación de justicia perfecta, fue percibida en la misma frecuencia para ambos grupos.
 
 -   Estudiantes con menos de 25 libros en su hogar sintierion injusticia por sobre-recompensa en mayor medida que estudiantiantes con más libros en su hogar.
+
+<br/>
+
+Sensación de recompensa segun **tiempo** dedicado al estudio:
+
+```{r, echo=FALSE}
+tabla_cruzada_lt <- sjt.xtab(proc_datos$justicia_nota_tiempo, 
+                        proc_datos$libros_hogar, 
+                        show.summary = F, 
+                        emph.total = T, 
+                         show.col.prc = T, # porcentaje columna
+                         encoding= "UTF-8")
+tabla_cruzada_lt
+```
 
 ### Meritocracia
 

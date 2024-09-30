@@ -3,7 +3,7 @@
     "path": "~/GitHub/just-school/processing/analisis.qmd",
     "project_path": "processing/analisis.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "1726639145",
     "contents": "",
     "dirty": false,
     "created": 1725942582259.0,
@@ -15,18 +15,18 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "0,0",
+        "cursorPosition": "26,0",
         "scrollLine": "0",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "294:80"
+        "rmdVisualModeLocation": "593:333.3333435058594"
     },
     "folds": "",
-    "lastKnownWriteTime": 1727668295,
+    "lastKnownWriteTime": 1727698561,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1727668295537,
+    "last_content_update": 1727698561759,
     "read_only": false,
     "read_only_alternatives": []
 }
