@@ -4,7 +4,7 @@
 # 1. cargar librerias ---------------------------------------------------------
 
 #install.packages("pacman")
-pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, haven)
+pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, haven, SjPlot, summarytools)
 
 
 # 2. cargar bbdd --------------------------------------------------------------
@@ -25,14 +25,20 @@ summary(proc_datos$justicia_nota)
 
 proc_datos <- proc_datos %>%
   mutate(
-    justicia_nota = case_when(
+    justicia_nota = dplyr::case_when(
       justicia_nota < 0  ~ "injusticia sub-recompensa",
-      justicia_nota == 0 ~ "justicia perfecta",
-      justicia_nota > 0  ~ "injusticia sobre-recompensa"
+      justicia_nota == 0 | notas_merit == 2 ~ "justicia perfecta", 
+      justicia_nota > 0  ~ "injusticia sobre-recompensa" 
     )
   ) 
 
-frq(proc_datos$justicia_nota) #700 NA 
+# se deberian agregar en justicia perfecta los casos que contestaron haber 
+# obtenido la nota que merecían? 
+# o el indice de justicia lo que busca es ver 
+
+frq(proc_datos$justicia_nota)  
+
+
 
 # 4. base procesada -----------------------------------------------------------
 proc_datos <-as.data.frame(proc_datos)

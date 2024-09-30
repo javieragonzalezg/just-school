@@ -1,0 +1,1 @@
+{"frames":[],"message":"Error in sjt.xtab(datos$justicia_nota, datos$genero_ES, show.summary = F,  : \n  could not find function \"sjt.xtab\"\n"}
