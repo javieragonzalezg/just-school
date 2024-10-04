@@ -42,6 +42,14 @@ datos <- proc_datos %>% select(notas_esfuerzo, notas_merit,
 print(summarytools::dfSummary(datos), method="render")
 ```
 
+<br/>
+
+Se comparan dos indices de evaluación de (in)justicia en las notas (j) y sus cruces.
+
+-   El primero **"justicia_nota"** se contruye a partir de la pregunta "¿Te parece que este promedio fue más o menos de lo que merecías?"
+
+-   El segundo **"justicia_nota_tiempo"** considera la pregunta "Tomando en cuenta el tiempo que le dedicas a tus estudios, las notas que me saco son..."
+
 ## Descriptivos bivariados (solo tablas)
 
 Se presenta una descripción de los cruces del **índice de evaluación de (in)justicia en las notas (J)** con variables sociodemográficas y de percepción a la meritocracia (en la escuela y sociedad).

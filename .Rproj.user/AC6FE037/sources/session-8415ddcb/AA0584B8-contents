@@ -1,0 +1,200 @@
+# LABORATORIO DE ANALISIS DE DATOS ----
+#
+# Laboratorio 4
+# Estadistica Descriptiva UCHILE 
+# 14 de abril de 2022
+# Marco Verdugo y Daniela Olivares Collio.
+
+
+# Para empezar: Abrimos desde LaboratorioR nuestro archivo "LaboratorioR" 
+# en formato R Project.
+
+
+# 0. INSTALAR PAQUETES Y CARGAR LIBRERIAS ----
+
+# install.packages(c("summarytools", "dplyr", "car")) 
+# Esto instala todos los necesarios, pero si ya los tenemos instalados no 
+# lo volvemos a hacer.
+
+# Instalar paquete necesario para esta clase en especifico
+install.packages("car")
+
+# Cargamos las librerias que vamos a utilizar
+library(summarytools)
+library(dplyr)
+library(car)
+
+# 1. ABRIR DATOS DE INTERES ----
+
+# Cargar base desde formato CSV
+ENUSC <- read.csv2("datos/ENUSC_2019.csv")
+
+View(ENUSC)
+
+# 2. RECODIFICAR Y TRANFORMACION DE VARIABLES ----
+
+# ---- Reasignacion de nombre de variables ----
+
+# A partir de base original asignamos nombres nuevos a columnas de interes.
+# La base editada se guarda en una base "nueva" para mantener original intacta.
+
+# A19: Durante los ultimos doce meses, a usted o algun miembro de su hogar 
+# INTENTARON ASALTARLO usando violencia, amenaza o intimidacion?
+# A19_1_1_N_Veces: Cuantas veces?
+
+# asalto = A19_1_1
+# Nveces = A19_1_1_N_Veces
+# sexo   = rph_sexo
+
+table(ENUSC$A19_1_1)
+table(ENUSC$A19_1_1_N_Veces) 
+table(ENUSC$rph_sexo)
+
+# Creamos la base nueva y cambiamos los nombres de las variables
+ENUSC_2 <- rename(ENUSC, 
+                  asalto = A19_1_1, 
+                  Nveces = A19_1_1_N_Veces, 
+                  sexo   = rph_sexo)
+
+table(ENUSC_2$asalto)
+table(ENUSC_2$Nveces) 
+table(ENUSC_2$sexo)
+
+
+# ---- Recodificar variables----
+
+# Vamos a utilizar la funcion mutate, que permite cambiar un dataframe 
+# agregando columnas nuevas o reemplazando las existentes. En este caso
+# agregaremso columnas nuevas.
+# Hay dos funciones "recode" (paquetes 'dplyr' y 'car').
+# Con formato 'car::recode' indicamos que usaremos "recode" de paquete 'car'.
+
+# A base nueva agregamos dos variables nuevas 
+# (que son recodificaciones de las variables ya existentes a las que les 
+# cambiamos nombre)
+ENUSC_2 <- mutate(ENUSC_2, 
+                  asalto_rec=car::recode(ENUSC_2$asalto,"1=1;2=2;88:96=NA"))
+
+ENUSC_2 <- mutate(ENUSC_2, 
+                  Nveces_rec=car::recode(ENUSC_2$Nveces,"1:2=1;3:5=2;8:12=3"))
+
+
+table(ENUSC_2$asalto_rec)
+table(ENUSC_2$Nveces_rec) 
+
+# ---- Transformar variables y etiquetar valores ----
+
+# Transformamos variables numericas a factor y asignamos etiquetas a los valores
+ENUSC_2$asalto_rec <- factor(ENUSC_2$asalto_rec, 
+                             levels=c(1,2),
+                             labels=c("Si","No"))
+
+ENUSC_2$Nveces_rec <- factor(ENUSC_2$Nveces_rec, 
+                             levels=c(1,2,3),
+                             labels=c("Pocas veces","Muchas veces","Demasiadas veces"))
+
+ENUSC_2$sexo <- factor(ENUSC_2$sexo, 
+                       levels=c(1,2), 
+                       labels=c("Hombre","Mujer"))
+
+# En resumen: 
+
+# Especificar paquete desde el cual queremos ejecutar la funcion 'recode' para 
+# poder recodificar segun tramos.
+# Haremos: i) recodificar variable;
+#          ii) guardar en una nueva variable; 
+#          iii) variable se asigna al final de la base preexistente
+
+# Verificar etiquetas nuevas
+table(ENUSC_2$asalto_rec)
+table(ENUSC_2$Nveces_rec) 
+table(ENUSC_2$sexo)
+
+
+# 3. CONSTRUCCION DE UN INDICE ----
+
+# Supongamos que nos gustaria saber sobre la frencuencia en que ocurren 
+# situaciones de peligro en los barrios, en base a la percepcion de las 
+# personas sobre su propia realidad.
+# Podemos tomar las siguientes variables:
+# Durante los ultimos 12 meses, con que frecuencia diria usted que suceden las
+# siguientes situaciones en su barrio?
+# Nunca (1),
+# casi nunca (2), 
+# frecuentemente (3), 
+# Siempre (4), 
+# No sabe (88), 
+# No responde (99), 
+# Sin dato (96).
+
+# P11_10_1: Presencia de pandillas violentas
+# P11_11_1: Peleas callejeras con armas blancas o de fuego
+# P11_14_1: Venta de drogas
+# P11_15_1: Robos o asaltos en la via publica
+
+# Recodificamos y creamos variables nuevas al final
+ENUSC_2 <- mutate(ENUSC_2, 
+                  pandillas=car::recode(ENUSC_2$P11_10_1,"1=1;2=2;3=3;4=4;88:99=NA"))
+
+ENUSC_2 <- mutate(ENUSC_2, 
+                  peleas=car::recode(ENUSC_2$P11_11_1,"1=1;2=2;3=3;4=4;88:99=NA"))
+
+ENUSC_2 <- mutate(ENUSC_2, 
+                  drogas=car::recode(ENUSC_2$P11_14_1,"1=1;2=2;3=3;4=4;88:99=NA"))
+
+ENUSC_2 <- mutate(ENUSC_2, 
+                  robos=car::recode(ENUSC_2$P11_15_1,"1=1;2=2;3=3;4=4;88:99=NA"))
+
+# Verificamos recodificacion
+freq(ENUSC_2$pandillas)
+freq(ENUSC_2$peleas)
+freq(ENUSC_2$drogas)
+freq(ENUSC_2$robos)
+
+#Para quienes no pueden utilizar freq por problemas con summarytools
+install.packages("fdth")
+library(fdth)
+
+(fdt_cat(factor(ENUSC_2$pandillas), na.rm = TRUE))
+
+sum(is.na(ENUSC_2$pandillas))
+
+mean(is.na(ENUSC_2$pandillas))*100
+
+# Con estas variables podemos construir un indice de nivel de situaciones de
+# peligro percibida en los barrios.
+# Promedio simple de variables (indice sumativo)
+# OJO, para poder hacer el indice no transformamos las variables a factores. 
+# Depende de que queremos hacer.
+# Los indices permiten sintetizar informacion y tener una medida agregada 
+# (variable formativa) de una variable que no se observa con un solo item.
+# De todos modos, hay que tener en cuenta que los indices requieren de una 
+# justificacion teorica y una validacion estadistica.
+# Ademas, la variable peligro se "transforma" en intervalar. Las 4 variables 
+# separadas son ordinales 1-4.
+
+ENUSC_2 <- mutate(ENUSC_2, peligro = (pandillas + peleas + drogas + robos)/4)
+
+
+# 4. ANALISIS ESTADISTICO DESCRIPTIVO ----
+
+# Tabla 1. Estadisticos Descriptivos indice situaciones de peligrosidad 
+# percibida en los barrios.
+
+# Tiene sentido calcular una tabla de frecuencias?
+
+# Estadisticos de resumen del indice "peligro"
+summary(ENUSC_2$peligro)
+sd(ENUSC_2$peligro, na.rm = TRUE) #se incluye este código para quienes no puedan hacer descr
+
+
+descr(ENUSC_2$peligro, 
+      stats = c("min","max","med","mean","q1","q3","sd"), 
+      transpose = TRUE)
+
+# 5. GUARDAR ----
+
+# Recuerda Guardar el Script en la carpeta codigos como LAB4
+
+# Guardar base en formato RDS, con bases listas para analisis
+saveRDS(ENUSC_2, file = "datos/ENUSC-editada.rds")

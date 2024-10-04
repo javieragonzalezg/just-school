@@ -4,7 +4,7 @@
 # 1. cargar librerias ---------------------------------------------------------
 
 #install.packages("pacman")
-pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, haven, SjPlot, summarytools)
+pacman::p_load(dplyr, sjmisc, car, sjlabelled, stargazer, haven, sjPlot, summarytools)
 
 
 # 2. cargar bbdd --------------------------------------------------------------
@@ -27,25 +27,31 @@ summary(proc_datos$justicia_nota)
 proc_datos <- proc_datos %>%
   mutate(
     justicia_nota_tiempo = dplyr::case_when(
-      justicia_nota < 0  |notas_esfuerzo == 1 ~ "injusticia sub-recompensa",
-      justicia_nota == 0 | notas_esfuerzo == 2 ~ "justicia perfecta", 
-      justicia_nota > 0  | notas_esfuerzo == 3 ~ "injusticia sobre-recompensa" 
-    )
-  ) 
+      justicia_nota < 0  |notas_esfuerzo == 1 ~ 1,
+      justicia_nota == 0 | notas_esfuerzo == 2 ~ 2, 
+      justicia_nota > 0  | notas_esfuerzo == 3 ~ 3)) 
+
+proc_datos$justicia_nota_tiempo <- factor(proc_datos$justicia_nota_tiempo, 
+                                          levels=c(1,2,3),
+                                          labels=c("injusticia sub-recompensa",
+                                                   "justicia perfecta",
+                                                   "injusticia sobre-recompensa"))
+
 
 proc_datos <- proc_datos %>%
   mutate(
     justicia_nota = dplyr::case_when(
-      justicia_nota < 0  ~ "injusticia sub-recompensa",
-      justicia_nota == 0 | notas_merit == 2 ~ "justicia perfecta", 
-      justicia_nota > 0  ~ "injusticia sobre-recompensa" 
+      justicia_nota < 0  ~ 1,
+      justicia_nota == 0 | notas_merit == 2 ~ 2, 
+      justicia_nota > 0  ~ 3
     )
   ) 
 
-# se deberian agregar en justicia perfecta los casos que contestaron haber 
-# obtenido la nota que merecían? 
-# o el indice de justicia lo que busca es ver 
-
+proc_datos$justicia_nota <- factor(proc_datos$justicia_nota, 
+                                          levels=c(1,2,3),
+                                          labels=c("injusticia sub-recompensa",
+                                                   "justicia perfecta",
+                                                   "injusticia sobre-recompensa"))
 frq(proc_datos$justicia_nota)  
 
 
