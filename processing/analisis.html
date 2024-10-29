@@ -46,8 +46,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul class="collapse">
   <li><a href="#descriptivos-univariados" id="toc-descriptivos-univariados" class="nav-link active" data-scroll-target="#descriptivos-univariados"><span class="header-section-number">1</span> <span class="black">Descriptivos univariados</span></a></li>
-  <li><a href="#descriptivos-bivariados-solo-tablas" id="toc-descriptivos-bivariados-solo-tablas" class="nav-link" data-scroll-target="#descriptivos-bivariados-solo-tablas"><span class="header-section-number">2</span> Descriptivos bivariados (solo tablas)</a></li>
-  <li><a href="#conclusiones-preliminares" id="toc-conclusiones-preliminares" class="nav-link" data-scroll-target="#conclusiones-preliminares"><span class="header-section-number">3</span> Conclusiones preliminares</a></li>
+  <li><a href="#descriptivos-bivariados" id="toc-descriptivos-bivariados" class="nav-link" data-scroll-target="#descriptivos-bivariados"><span class="header-section-number">2</span> Descriptivos bivariados</a></li>
+  <li><a href="#modelos" id="toc-modelos" class="nav-link" data-scroll-target="#modelos"><span class="header-section-number">3</span> Modelos</a></li>
   </ul>
 </nav>
 </div>
@@ -80,8 +80,8 @@ ul.task-list li input[type="checkbox"] {
 <div class="container st-container">
 <h3 class="anchored">Data Frame Summary</h3>
 <h4 class="anchored">datos</h4>
-<strong>Dimensions</strong>: 902 x 14
-  <br><strong>Duplicates</strong>: 57
+<strong>Dimensions</strong>: 902 x 16
+  <br><strong>Duplicates</strong>: 4
 <br>
 
 <table class="table table-striped table-bordered st-table st-table-striped st-table-bordered st-multiline table-sm small" data-quarto-postprocess="true">
@@ -156,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table></td>
-<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAHgAAABOBAMAAAAZac9RAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AoEFhMMg+NuwgAAAFlJREFUWMPt1MENABAMRmErGAEbsP9uLoKDQ6OSBu+d+52a/M79WZwKXlrDqYzAYDDYAKs2THz/EI5bLV4lLoPBYPCMVTN06fQe2u0N3F+VwWAw2ASrNuy3KiA2u3Ootn9sAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTEwLTA0VDIyOjE5OjEyKzAwOjAwBvcWaAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0xMC0wNFQyMjoxOToxMiswMDowMHeqrtQAAAAASUVORK5CYII=" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
+<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAHgAAABOBAMAAAAZac9RAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AodDjIK2Ts0yQAAAFlJREFUWMPt1MENABAMRmErGAEbsP9uLoKDQ6OSBu+d+52a/M79WZwKXlrDqYzAYDDYAKs2THz/EI5bLV4lLoPBYPCMVTN06fQe2u0N3F+VwWAw2ASrNuy3KiA2u3Ootn9sAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTEwLTI5VDE0OjUwOjEwKzAwOjAw3FZ3kQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0xMC0yOVQxNDo1MDoxMCswMDowMK0Lzy0AAAAASUVORK5CYII=" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
 <td style="text-align: center;">893 (99.0%)</td>
 <td style="text-align: center;">9 (1.0%)</td>
 </tr>
@@ -208,13 +208,38 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table></td>
-<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAIEAAABOBAMAAAD1MGgCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AoEFhMMg+NuwgAAAGBJREFUWMPt1LENwCAMBVGPQDYAskGy/24U2GlSGQsJWXc9r8DSFyGrf7XLV1Hhfi0EBASEjEJ8J53P0gp9ufq7pjcEBASE/UJ85U7Y6hME/ZaAMK/5ICAgICQV4jtJIgPW7tCNuP/jHwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0xMC0wNFQyMjoxOToxMiswMDowMAb3FmgAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMTAtMDRUMjI6MTk6MTIrMDA6MDB3qq7UAAAAAElFTkSuQmCC" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
+<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAIEAAABOBAMAAAD1MGgCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AodDjIK2Ts0yQAAAGBJREFUWMPt1LENwCAMBVGPQDYAskGy/24U2GlSGQsJWXc9r8DSFyGrf7XLV1Hhfi0EBASEjEJ8J53P0gp9ufq7pjcEBASE/UJ85U7Y6hME/ZaAMK/5ICAgICQV4jtJIgPW7tCNuP/jHwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0xMC0yOVQxNDo1MDoxMCswMDowMNxWd5EAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMTAtMjlUMTQ6NTA6MTArMDA6MDCtC88tAAAAAElFTkSuQmCC" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
 <td style="text-align: center;">901 (99.9%)</td>
 <td style="text-align: center;">1 (0.1%)</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">3</td>
-<td style="text-align: left;">justicia_nota [factor]</td>
+<td style="text-align: left;">justicia_nota [numeric]</td>
+<td style="text-align: left;">4. ¿Cuál fue tu promedio final de notas el año pasado? Si no lo recuerdas exactamente, indica una nota aproximada. (entre 1.0 y 7.0)</td>
+<td style="text-align: left; padding: 8; vertical-align: middle;"><table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<tbody>
+<tr class="odd" style="background-color:transparent">
+<td style="text-align: left; padding: 0; margin: 0; border: 0;">Mean (sd) : 0 (0.1)</td>
+</tr>
+<tr class="even" style="background-color:transparent">
+<td style="text-align: left; padding: 0; margin: 0; border: 0;">min ≤ med ≤ max:</td>
+</tr>
+<tr class="odd" style="background-color:transparent">
+<td style="text-align: left; padding: 0; margin: 0; border: 0;">-0.7 ≤ 0 ≤ 1.8</td>
+</tr>
+<tr class="even" style="background-color:transparent">
+<td style="text-align: left; padding: 0; margin: 0; border: 0;">IQR (CV) : 0 (-85.2)</td>
+</tr>
+</tbody>
+</table></td>
+<td style="text-align: left; vertical-align: middle;">121 distinct values</td>
+<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAJgAAABuBAMAAAApJ8cWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AodDjIK2Ts0yQAAAGJJREFUaN7t2bENgDAMAEGvkBEIG5D9dwMsCkBCKFHK+8LlFXbpCI1UXtWsdPaBre1og8FgMBgMBoPBYDAYDAaDwWAwGAwGg8FgsCeWf8llEnaOBvvHcus3rOMKF1anFBppB4R9LQylFypcAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTEwLTI5VDE0OjUwOjEwKzAwOjAw3FZ3kQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0xMC0yOVQxNDo1MDoxMCswMDowMK0Lzy0AAAAASUVORK5CYII=" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
+<td style="text-align: center;">901 (99.9%)</td>
+<td style="text-align: center;">1 (0.1%)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">justicia_nota_ch [factor]</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left; padding: 8; vertical-align: middle;"><table data-quarto-postprocess="true" class="table table-sm table-striped small">
 <tbody>
@@ -251,13 +276,13 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table></td>
-<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAIQAAABOBAMAAAATGaNGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AoEFhMMg+NuwgAAAGBJREFUWMPt1UsKwCAMRVG34BKqO7D731vBTxEcpQYJzb1zzyTwDIHm0tsVpXUi3yMICAgIJ4TCdorf/ZhIGy1HFVcgICAgzhMKw2djwW0QH3/kmahHhYCAgPBEKGwntR51hNVG+puQSQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0xMC0wNFQyMjoxOToxMiswMDowMAb3FmgAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMTAtMDRUMjI6MTk6MTIrMDA6MDB3qq7UAAAAAElFTkSuQmCC" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
+<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAIQAAABOBAMAAAATGaNGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AodDjIK2Ts0yQAAAGBJREFUWMPt1UsKwCAMRVG34BKqO7D731vBTxEcpQYJzb1zzyTwDIHm0tsVpXUi3yMICAgIJ4TCdorf/ZhIGy1HFVcgICAgzhMKw2djwW0QH3/kmahHhYCAgPBEKGwntR51hNVG+puQSQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0xMC0yOVQxNDo1MDoxMCswMDowMNxWd5EAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMTAtMjlUMTQ6NTA6MTArMDA6MDCtC88tAAAAAElFTkSuQmCC" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
 <td style="text-align: center;">901 (99.9%)</td>
 <td style="text-align: center;">1 (0.1%)</td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">4</td>
-<td style="text-align: left;">justicia_nota_tiempo [factor]</td>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: left;">justicia_nota_tiempo_ch [factor]</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left; padding: 8; vertical-align: middle;"><table data-quarto-postprocess="true" class="table table-sm table-striped small">
 <tbody>
@@ -277,29 +302,29 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd" style="background-color:transparent">
 <td style="text-align: right; padding: 0 5px 0 7px; margin: 0; border: 0;">223</td>
 <td style="text-align: left; padding: 0 2px 0 0; border: 0;">(</td>
-<td style="text-align: right; padding: 0; border: 0;">25.0%</td>
+<td style="text-align: right; padding: 0; border: 0;">24.7%</td>
 <td style="text-align: left; padding: 0 4px 0 2px; border: 0;">)</td>
 </tr>
 <tr class="even" style="background-color:transparent">
-<td style="text-align: right; padding: 0 5px 0 7px; margin: 0; border: 0;">577</td>
+<td style="text-align: right; padding: 0 5px 0 7px; margin: 0; border: 0;">659</td>
 <td style="text-align: left; padding: 0 2px 0 0; border: 0;">(</td>
-<td style="text-align: right; padding: 0; border: 0;">64.6%</td>
+<td style="text-align: right; padding: 0; border: 0;">73.1%</td>
 <td style="text-align: left; padding: 0 4px 0 2px; border: 0;">)</td>
 </tr>
 <tr class="odd" style="background-color:transparent">
-<td style="text-align: right; padding: 0 5px 0 7px; margin: 0; border: 0;">93</td>
+<td style="text-align: right; padding: 0 5px 0 7px; margin: 0; border: 0;">20</td>
 <td style="text-align: left; padding: 0 2px 0 0; border: 0;">(</td>
-<td style="text-align: right; padding: 0; border: 0;">10.4%</td>
+<td style="text-align: right; padding: 0; border: 0;">2.2%</td>
 <td style="text-align: left; padding: 0 4px 0 2px; border: 0;">)</td>
 </tr>
 </tbody>
 </table></td>
-<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAG0AAABOBAMAAADY7oX9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AoEFhMMg+NuwgAAAFhJREFUWMPt1LEJACAMRFFH0A1EN9D9d7NJo6KQWEX+7191cCH8X9lLt6K42tcaDofDTc76L0mZN1eU5eMO93A4nF9n/QkvP/j6n1onOzQcDoc7Oeu//NwAlDSiAvvVAooAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMTAtMDRUMjI6MTk6MTIrMDA6MDAG9xZoAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTEwLTA0VDIyOjE5OjEyKzAwOjAwd6qu1AAAAABJRU5ErkJggg==" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
-<td style="text-align: center;">893 (99.0%)</td>
-<td style="text-align: center;">9 (1.0%)</td>
+<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAHoAAABOBAMAAAAdnB9sAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AodDjIK2Ts0yQAAAFhJREFUWMPt1cENABAQRFEtaIEO6L83FydCNiYh+P/snTYZzv1b6POGqo65LaHRaPRhre2a5emLOqw1vJilhEaj0VOtLdO9i6zuuaKj6cNFo9HonVrbtR8rPx++lCjI0i4AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMTAtMjlUMTQ6NTA6MTArMDA6MDDcVneRAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTEwLTI5VDE0OjUwOjEwKzAwOjAwrQvPLQAAAABJRU5ErkJggg==" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
+<td style="text-align: center;">902 (100.0%)</td>
+<td style="text-align: center;">0 (0.0%)</td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;">5</td>
+<tr class="even">
+<td style="text-align: center;">6</td>
 <td style="text-align: left;">genero_ES [factor]</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left; padding: 8; vertical-align: middle;"><table data-quarto-postprocess="true" class="table table-sm table-striped small">
@@ -328,12 +353,12 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table></td>
-<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAFoAAAA3BAMAAAB+7EC1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AoEFhMMg+NuwgAAAD1JREFUSMdjYBi6QIk4AFWtbEwMMBpVPap6VDUdVZOWiwWJA3RQTYyjFeGqiQmTUdWjqkdV01c1abl4KAIAcJZJw8p+Rv8AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMTAtMDRUMjI6MTk6MTIrMDA6MDAG9xZoAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTEwLTA0VDIyOjE5OjEyKzAwOjAwd6qu1AAAAABJRU5ErkJggg==" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
+<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAFoAAAA3BAMAAAB+7EC1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AodDjIK2Ts0yQAAAD1JREFUSMdjYBi6QIk4AFWtbEwMMBpVPap6VDUdVZOWiwWJA3RQTYyjFeGqiQmTUdWjqkdV01c1abl4KAIAcJZJw8p+Rv8AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMTAtMjlUMTQ6NTA6MTArMDA6MDDcVneRAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTEwLTI5VDE0OjUwOjEwKzAwOjAwrQvPLQAAAABJRU5ErkJggg==" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
 <td style="text-align: center;">857 (95.0%)</td>
 <td style="text-align: center;">45 (5.0%)</td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">6</td>
+<tr class="odd">
+<td style="text-align: center;">7</td>
 <td style="text-align: left;">libros_hogar [factor]</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left; padding: 8; vertical-align: middle;"><table data-quarto-postprocess="true" class="table table-sm table-striped small">
@@ -362,12 +387,12 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table></td>
-<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAG4AAAA3BAMAAAAf9GL3AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AoEFhMMg+NuwgAAAEJJREFUSMdjYBj+QIlUANWnbEwaMBrVN6pvVN+oPiL1kVsuCZIKBkgfbo8o4tWHOzxH9Y3qG9U3qo8yfeSWS8MZAAAi6Gj56vDhPwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0xMC0wNFQyMjoxOToxMiswMDowMAb3FmgAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMTAtMDRUMjI6MTk6MTIrMDA6MDB3qq7UAAAAAElFTkSuQmCC" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
+<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAG4AAAA3BAMAAAAf9GL3AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AodDjIK2Ts0yQAAAEJJREFUSMdjYBj+QIlUANWnbEwaMBrVN6pvVN+oPiL1kVsuCZIKBkgfbo8o4tWHOzxH9Y3qG9U3qo8yfeSWS8MZAAAi6Gj56vDhPwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0xMC0yOVQxNDo1MDoxMCswMDowMNxWd5EAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMTAtMjlUMTQ6NTA6MTArMDA6MDCtC88tAAAAAElFTkSuQmCC" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
 <td style="text-align: center;">898 (99.6%)</td>
 <td style="text-align: center;">4 (0.4%)</td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;">7</td>
+<tr class="even">
+<td style="text-align: center;">8</td>
 <td style="text-align: left;">curso_estudiante [character]</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left; padding: 8; vertical-align: middle;"><table data-quarto-postprocess="true" class="table table-sm table-striped small">
@@ -396,12 +421,12 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table></td>
-<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAFcAAAA3BAMAAACLEssFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AoEFhMMg+NuwgAAADdJREFUSMdjYBiaQIkYoABVrGxMBBhVPKp4VDHNFJOUYQWJAQI0VzxayIwqHlU8hBSTlGGHGgAAwzJFHyLFAJAAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMTAtMDRUMjI6MTk6MTIrMDA6MDAG9xZoAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTEwLTA0VDIyOjE5OjEyKzAwOjAwd6qu1AAAAABJRU5ErkJggg==" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
+<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAFcAAAA3BAMAAACLEssFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AodDjIK2Ts0yQAAADdJREFUSMdjYBiaQIkYoABVrGxMBBhVPKp4VDHNFJOUYQWJAQI0VzxayIwqHlU8hBSTlGGHGgAAwzJFHyLFAJAAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMTAtMjlUMTQ6NTA6MTArMDA6MDDcVneRAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTEwLTI5VDE0OjUwOjEwKzAwOjAwrQvPLQAAAABJRU5ErkJggg==" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
 <td style="text-align: center;">902 (100.0%)</td>
 <td style="text-align: center;">0 (0.0%)</td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">8</td>
+<tr class="odd">
+<td style="text-align: center;">9</td>
 <td style="text-align: left;">educ_max [factor]</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left; padding: 8; vertical-align: middle;"><table data-quarto-postprocess="true" class="table table-sm table-striped small">
@@ -430,12 +455,12 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table></td>
-<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAGoAAAA3BAMAAAAWH8KNAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AoEFhMMg+NuwgAAAEFJREFUSMdjYBi+QAkPUBTEAFBdysa4waiuUV2jukZ1YdNFXmkjSBoYAF1KpAEiwhATGI3qGtU1qmtUF5mlzXAEAJi3YrtKWivbAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTEwLTA0VDIyOjE5OjEyKzAwOjAwBvcWaAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0xMC0wNFQyMjoxOToxMiswMDowMHeqrtQAAAAASUVORK5CYII=" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
+<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAGoAAAA3BAMAAAAWH8KNAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AodDjIK2Ts0yQAAAEFJREFUSMdjYBi+QAkPUBTEAFBdysa4waiuUV2jukZ1YdNFXmkjSBoYAF1KpAEiwhATGI3qGtU1qmtUF5mlzXAEAJi3YrtKWivbAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTEwLTI5VDE0OjUwOjEwKzAwOjAw3FZ3kQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0xMC0yOVQxNDo1MDoxMCswMDowMK0Lzy0AAAAASUVORK5CYII=" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
 <td style="text-align: center;">730 (80.9%)</td>
 <td style="text-align: center;">172 (19.1%)</td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;">9</td>
+<tr class="even">
+<td style="text-align: center;">10</td>
 <td style="text-align: left;">school_esfuerzo_ES [haven_labelled, vctrs_vctr, double]</td>
 <td style="text-align: left;">En esta escuela, quienes se esfuerzan obtienen buenas notas</td>
 <td style="text-align: left; padding: 8; vertical-align: middle;"><table data-quarto-postprocess="true" class="table table-sm table-striped small">
@@ -490,12 +515,12 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table></td>
-<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAFYAAABmBAMAAACjAntpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AoEFhMMg+NuwgAAAGVJREFUWMPt1EEKgDAMRNFeoUfoeIP2/neroBsFm0RBWvh//VaBSUrrJalkq9NurWGx2A82sjfT/WB15L3DXsVisS9tZG/Z00RWni43G1exWOyjjext9v9QbnZ0BywWa9vI3laqA3qsq/gaYXJ7AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTEwLTA0VDIyOjE5OjEyKzAwOjAwBvcWaAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0xMC0wNFQyMjoxOToxMiswMDowMHeqrtQAAAAASUVORK5CYII=" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
+<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAFYAAABmBAMAAACjAntpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AodDjIK2Ts0yQAAAGVJREFUWMPt1EEKgDAMRNFeoUfoeIP2/neroBsFm0RBWvh//VaBSUrrJalkq9NurWGx2A82sjfT/WB15L3DXsVisS9tZG/Z00RWni43G1exWOyjjext9v9QbnZ0BywWa9vI3laqA3qsq/gaYXJ7AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTEwLTI5VDE0OjUwOjEwKzAwOjAw3FZ3kQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0xMC0yOVQxNDo1MDoxMCswMDowMK0Lzy0AAAAASUVORK5CYII=" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
 <td style="text-align: center;">897 (99.4%)</td>
 <td style="text-align: center;">5 (0.6%)</td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">10</td>
+<tr class="odd">
+<td style="text-align: center;">11</td>
 <td style="text-align: left;">school_talento_ES [haven_labelled, vctrs_vctr, double]</td>
 <td style="text-align: left;">En esta escuela, quienes son inteligentes obtienen buenas notas</td>
 <td style="text-align: left; padding: 8; vertical-align: middle;"><table data-quarto-postprocess="true" class="table table-sm table-striped small">
@@ -550,12 +575,12 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table></td>
-<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAFkAAABmBAMAAABSCSDkAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AoEFhMMg+NuwgAAAGZJREFUWMPt1MENgCAMRmFGkA20bAD77+ZBuRCUNoqxyXvn79Tkbwh+E9niuOXUqaDR6PnatksF/UhLTXmTo4xGoydq2y6jqv9pUbU2F7wPjUY/07ZdevgnPX15k4xGo9/Ttl16bAeDOLgWut1OTgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0xMC0wNFQyMjoxOToxMiswMDowMAb3FmgAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMTAtMDRUMjI6MTk6MTIrMDA6MDB3qq7UAAAAAElFTkSuQmCC" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
+<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAFkAAABmBAMAAABSCSDkAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AodDjIK2Ts0yQAAAGZJREFUWMPt1MENgCAMRmFGkA20bAD77+ZBuRCUNoqxyXvn79Tkbwh+E9niuOXUqaDR6PnatksF/UhLTXmTo4xGoydq2y6jqv9pUbU2F7wPjUY/07ZdevgnPX15k4xGo9/Ttl16bAeDOLgWut1OTgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0xMC0yOVQxNDo1MDoxMCswMDowMNxWd5EAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMTAtMjlUMTQ6NTA6MTArMDA6MDCtC88tAAAAAElFTkSuQmCC" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
 <td style="text-align: center;">898 (99.6%)</td>
 <td style="text-align: center;">4 (0.4%)</td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;">11</td>
+<tr class="even">
+<td style="text-align: center;">12</td>
 <td style="text-align: left;">school_merito_ES [haven_labelled, vctrs_vctr, double]</td>
 <td style="text-align: left;">En esta escuela, los/as estudiantes obtienen las notas que merecen</td>
 <td style="text-align: left; padding: 8; vertical-align: middle;"><table data-quarto-postprocess="true" class="table table-sm table-striped small">
@@ -610,12 +635,12 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table></td>
-<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAF8AAABmBAMAAABfF1CjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AoEFhMMg+NuwgAAAGdJREFUWMPt1LENgDAQBEGXgDvARwe4/95ICJAF4j6BB+3GnuSlcyn/SFKrTtMOlt4BAEBeEN609fhZoCHnSsdWAACQCoQ3Xd0SA7nN52e9DgAAvAHCm87/L7VbMFwJAADkAuFNf70Nl8DMM1XX020AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMTAtMDRUMjI6MTk6MTIrMDA6MDAG9xZoAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTEwLTA0VDIyOjE5OjEyKzAwOjAwd6qu1AAAAABJRU5ErkJggg==" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
+<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAF8AAABmBAMAAABfF1CjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AodDjIK2Ts0yQAAAGdJREFUWMPt1LENgDAQBEGXgDvARwe4/95ICJAF4j6BB+3GnuSlcyn/SFKrTtMOlt4BAEBeEN609fhZoCHnSsdWAACQCoQ3Xd0SA7nN52e9DgAAvAHCm87/L7VbMFwJAADkAuFNf70Nl8DMM1XX020AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMTAtMjlUMTQ6NTA6MTArMDA6MDDcVneRAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTEwLTI5VDE0OjUwOjEwKzAwOjAwrQvPLQAAAABJRU5ErkJggg==" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
 <td style="text-align: center;">895 (99.2%)</td>
 <td style="text-align: center;">7 (0.8%)</td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">12</td>
+<tr class="odd">
+<td style="text-align: center;">13</td>
 <td style="text-align: left;">merit_esfuerzo_percep_ES [haven_labelled, vctrs_vctr, double]</td>
 <td style="text-align: left;">En Chile, las personas son recompensadas por su esfuerzo</td>
 <td style="text-align: left; padding: 8; vertical-align: middle;"><table data-quarto-postprocess="true" class="table table-sm table-striped small">
@@ -670,12 +695,12 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table></td>
-<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAFsAAABmBAMAAABW/PDZAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AoEFhMMg+NuwgAAAGdJREFUWMPt1MEJgDAMRuGOYDfQuEGz/24ieBBpSQISWnjv/J0Cf0pZO7mrZtvDT1VtcDg8nwe3astELp2My3xqcDg8gQe3Wn1NycXXPj5kLzgc/jcPbnXWP3M4+OsycDg8kwe3umoX1ga+VCWXL7EAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMTAtMDRUMjI6MTk6MTIrMDA6MDAG9xZoAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTEwLTA0VDIyOjE5OjEyKzAwOjAwd6qu1AAAAABJRU5ErkJggg==" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
+<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAFsAAABmBAMAAABW/PDZAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AodDjIK2Ts0yQAAAGdJREFUWMPt1MEJgDAMRuGOYDfQuEGz/24ieBBpSQISWnjv/J0Cf0pZO7mrZtvDT1VtcDg8nwe3astELp2My3xqcDg8gQe3Wn1NycXXPj5kLzgc/jcPbnXWP3M4+OsycDg8kwe3umoX1ga+VCWXL7EAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMTAtMjlUMTQ6NTA6MTArMDA6MDDcVneRAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTEwLTI5VDE0OjUwOjEwKzAwOjAwrQvPLQAAAABJRU5ErkJggg==" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
 <td style="text-align: center;">901 (99.9%)</td>
 <td style="text-align: center;">1 (0.1%)</td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;">13</td>
+<tr class="even">
+<td style="text-align: center;">14</td>
 <td style="text-align: left;">merit_talento_percep_ES [haven_labelled, vctrs_vctr, double]</td>
 <td style="text-align: left;">En Chile, las personas son recompensadas por su inteligencia y habilidad</td>
 <td style="text-align: left; padding: 8; vertical-align: middle;"><table data-quarto-postprocess="true" class="table table-sm table-striped small">
@@ -730,12 +755,12 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table></td>
-<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAGIAAABmBAMAAADCGlkrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AoEFhMMg+NuwgAAAGZJREFUWMPt1LENwCAMRFFWYATMBnj/3ZIiBUJRdG4ig/6veY2lo5RzsrtWpR7R3R2BQOwk4jvXHv8tbEm71dRAIBDZRXznVS+1ML336340EAhEChHfef7/qklivhUCgdhBxHd+QhegH9FsYEsp9wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0xMC0wNFQyMjoxOToxMiswMDowMAb3FmgAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMTAtMDRUMjI6MTk6MTIrMDA6MDB3qq7UAAAAAElFTkSuQmCC" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
+<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAGIAAABmBAMAAADCGlkrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AodDjIK2Ts0yQAAAGZJREFUWMPt1LENwCAMRFFWYATMBnj/3ZIiBUJRdG4ig/6veY2lo5RzsrtWpR7R3R2BQOwk4jvXHv8tbEm71dRAIBDZRXznVS+1ML336340EAhEChHfef7/qklivhUCgdhBxHd+QhegH9FsYEsp9wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0xMC0yOVQxNDo1MDoxMCswMDowMNxWd5EAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMTAtMjlUMTQ6NTA6MTArMDA6MDCtC88tAAAAAElFTkSuQmCC" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
 <td style="text-align: center;">894 (99.1%)</td>
 <td style="text-align: center;">8 (0.9%)</td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">14</td>
+<tr class="odd">
+<td style="text-align: center;">15</td>
 <td style="text-align: left;">social_merito_percep_ES [haven_labelled, vctrs_vctr, double]</td>
 <td style="text-align: left;">En Chile, todas las personas obtienen lo que merecen</td>
 <td style="text-align: left; padding: 8; vertical-align: middle;"><table data-quarto-postprocess="true" class="table table-sm table-striped small">
@@ -790,30 +815,58 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table></td>
-<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAFYAAABmBAMAAACjAntpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AoEFhMMg+NuwgAAAGhJREFUWMPt1LENgDAMRNGs4BGcbAD775aGypDgEwIR6f/6NYl0LmW9aszt3GHbHsJisZJV9maZXrY10+gfLtqwWOzQKnv7w314cEt8ZsOfYbFY0Sp7s0yf3AdP2TZ5PhaLvbfK3laqAxaerVtsy91xAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTEwLTA0VDIyOjE5OjEyKzAwOjAwBvcWaAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0xMC0wNFQyMjoxOToxMiswMDowMHeqrtQAAAAASUVORK5CYII=" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
+<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAFYAAABmBAMAAACjAntpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AodDjIK2Ts0yQAAAGhJREFUWMPt1LENgDAMRNGs4BGcbAD775aGypDgEwIR6f/6NYl0LmW9aszt3GHbHsJisZJV9maZXrY10+gfLtqwWOzQKnv7w314cEt8ZsOfYbFY0Sp7s0yf3AdP2TZ5PhaLvbfK3laqAxaerVtsy91xAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTEwLTI5VDE0OjUwOjEwKzAwOjAw3FZ3kQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0xMC0yOVQxNDo1MDoxMCswMDowMK0Lzy0AAAAASUVORK5CYII=" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
 <td style="text-align: center;">898 (99.6%)</td>
 <td style="text-align: center;">4 (0.4%)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">16</td>
+<td style="text-align: left;">rendimiento [numeric]</td>
+<td style="text-align: left;">4. ¿Cuál fue tu promedio final de notas el año pasado? Si no lo recuerdas exactamente, indica una nota aproximada. (entre 1.0 y 7.0)</td>
+<td style="text-align: left; padding: 8; vertical-align: middle;"><table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<tbody>
+<tr class="odd" style="background-color:transparent">
+<td style="text-align: left; padding: 0; margin: 0; border: 0;">Mean (sd) : 6 (0.6)</td>
+</tr>
+<tr class="even" style="background-color:transparent">
+<td style="text-align: left; padding: 0; margin: 0; border: 0;">min ≤ med ≤ max:</td>
+</tr>
+<tr class="odd" style="background-color:transparent">
+<td style="text-align: left; padding: 0; margin: 0; border: 0;">1 ≤ 6 ≤ 7</td>
+</tr>
+<tr class="even" style="background-color:transparent">
+<td style="text-align: left; padding: 0; margin: 0; border: 0;">IQR (CV) : 0.7 (0.1)</td>
+</tr>
+</tbody>
+</table></td>
+<td style="text-align: left; vertical-align: middle;">36 distinct values</td>
+<td style="text-align: left; vertical-align: middle; padding: 0; background-color: transparent;"><img src="data:image/png;base64,%20iVBORw0KGgoAAAANSUhEUgAAAJgAAABuBAMAAAApJ8cWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX////9/v2mpqbw8PD///+xh0SBAAAAAnRSTlMAAHaTzTgAAAABYktHRACIBR1IAAAAB3RJTUUH6AodDjIK2Ts0yQAAAIRJREFUaN7t2UEKgCAQQNG5Qt0gvYHe/27RuNB0YY2zKPh/ISH4IIJQFCFLm6GgHc3MAhbzFdh7rHwGJ0zHBAYGBgYGBgYGBgYGBjbHynHMCdPHBAYGBgYGBvYnbNfNgBdWmc9g5QWDE5brWjAwMDCw2z92BRuYCTbe7zZM7JlH2GpClk6SGbrSfy2vAQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0xMC0yOVQxNDo1MDoxMCswMDowMNxWd5EAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMTAtMjlUMTQ6NTA6MTArMDA6MDCtC88tAAAAAElFTkSuQmCC" class="img-fluid" style="border:none;background-color:transparent;padding:0;max-width:max-content;"></td>
+<td style="text-align: center;">902 (100.0%)</td>
+<td style="text-align: center;">0 (0.0%)</td>
 </tr>
 </tbody>
 </table>
 
-<p>Generated by <a href="https://github.com/dcomtois/summarytools">summarytools</a> 1.0.1 (<a href="https://www.r-project.org/">R</a> version 4.3.1)<br>2024-10-04</p>
+<p>Generated by <a href="https://github.com/dcomtois/summarytools">summarytools</a> 1.0.1 (<a href="https://www.r-project.org/">R</a> version 4.3.1)<br>2024-10-29</p>
 </div>
 </div>
 </div>
 </div>
 <p><br></p>
-<p>Se comparan dos indices de evaluación de (in)justicia en las notas (j) y sus cruces.</p>
-<ul>
-<li><p>El primero <strong>“justicia_nota”</strong> se contruye a partir de la pregunta “¿Te parece que este promedio fue más o menos de lo que merecías?”</p></li>
-<li><p>El segundo <strong>“justicia_nota_tiempo”</strong> considera la pregunta “Tomando en cuenta el tiempo que le dedicas a tus estudios, las notas que me saco son…”</p></li>
-</ul>
 </section>
-<section id="descriptivos-bivariados-solo-tablas" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="descriptivos-bivariados-solo-tablas"><span class="header-section-number">2</span> Descriptivos bivariados (solo tablas)</h2>
-<p>Se presenta una descripción de los cruces del <strong>índice de evaluación de (in)justicia en las notas (J)</strong> con variables sociodemográficas y de percepción a la meritocracia (en la escuela y sociedad).</p>
+<section id="descriptivos-bivariados" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="descriptivos-bivariados"><span class="header-section-number">2</span> Descriptivos bivariados</h2>
 <section id="sociodemográficos" class="level3" data-number="2.1">
 <h3 data-number="2.1" class="anchored" data-anchor-id="sociodemográficos"><span class="header-section-number">2.1</span> Sociodemográficos</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analisis_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 <p><strong>Género del estudiante</strong>:</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -827,7 +880,7 @@ ul.task-list li input[type="checkbox"] {
 </colgroup>
 <tbody>
 <tr class="odd">
-<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota</td>
+<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota_ch</td>
 <td colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal;">genero_ES</td>
 <td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; font-weight: bolder; font-style: italic; border-bottom: 1px solid; background-color: #f8f8f8;">Total</td>
 </tr>
@@ -897,7 +950,7 @@ sobre-recompensa</td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota_tiempo</td>
+<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota_tiempo_ch</td>
 <td colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal;">genero_ES</td>
 <td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; font-weight: bolder; font-style: italic; border-bottom: 1px solid; background-color: #f8f8f8;">Total</td>
 </tr>
@@ -909,38 +962,38 @@ sobre-recompensa</td>
 <td style="text-align: left; padding: 0.2cm; vertical-align: middle;">injusticia<br>
 sub-recompensa</td>
 <td style="text-align: center; padding: 0.2cm;"><span style="color:black;">95</span><br>
-<span style="color:#339933;">21.7&nbsp;%</span></td>
+<span style="color:#339933;">21.5&nbsp;%</span></td>
 <td style="text-align: center; padding: 0.2cm;"><span style="color:black;">117</span><br>
-<span style="color:#339933;">28.4&nbsp;%</span></td>
+<span style="color:#339933;">28.2&nbsp;%</span></td>
 <td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">212</span><br>
-<span style="color:#339933;">25&nbsp;%</span></td>
+<span style="color:#339933;">24.7&nbsp;%</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left; padding: 0.2cm; vertical-align: middle;">justicia perfecta</td>
-<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">294</span><br>
-<span style="color:#339933;">67.3&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">259</span><br>
-<span style="color:#339933;">62.9&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">553</span><br>
-<span style="color:#339933;">65.1&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">339</span><br>
+<span style="color:#339933;">76.7&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">292</span><br>
+<span style="color:#339933;">70.4&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">631</span><br>
+<span style="color:#339933;">73.6&nbsp;%</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left; padding: 0.2cm; vertical-align: middle;">injusticia<br>
 sobre-recompensa</td>
-<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">48</span><br>
-<span style="color:#339933;">11&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">36</span><br>
-<span style="color:#339933;">8.7&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">84</span><br>
-<span style="color:#339933;">9.9&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">8</span><br>
+<span style="color:#339933;">1.8&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">6</span><br>
+<span style="color:#339933;">1.4&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">14</span><br>
+<span style="color:#339933;">1.6&nbsp;%</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8; font-weight: bolder; font-style: italic; vertical-align: middle;">Total</td>
-<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">437</span><br>
+<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">442</span><br>
 <span style="color:#339933;">100&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">412</span><br>
+<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">415</span><br>
 <span style="color:#339933;">100&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">849</span><br>
+<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">857</span><br>
 <span style="color:#339933;">100&nbsp;%</span></td>
 </tr>
 </tbody>
@@ -962,7 +1015,7 @@ sobre-recompensa</td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota</td>
+<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota_ch</td>
 <td colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal;">curso_estudiante</td>
 <td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; font-weight: bolder; font-style: italic; border-bottom: 1px solid; background-color: #f8f8f8;">Total</td>
 </tr>
@@ -1032,7 +1085,7 @@ sobre-recompensa</td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota_tiempo</td>
+<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota_tiempo_ch</td>
 <td colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal;">curso_estudiante</td>
 <td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; font-weight: bolder; font-style: italic; border-bottom: 1px solid; background-color: #f8f8f8;">Total</td>
 </tr>
@@ -1044,38 +1097,38 @@ sobre-recompensa</td>
 <td style="text-align: left; padding: 0.2cm; vertical-align: middle;">injusticia<br>
 sub-recompensa</td>
 <td style="text-align: center; padding: 0.2cm;"><span style="color:black;">91</span><br>
-<span style="color:#339933;">20.4&nbsp;%</span></td>
+<span style="color:#339933;">20.2&nbsp;%</span></td>
 <td style="text-align: center; padding: 0.2cm;"><span style="color:black;">132</span><br>
-<span style="color:#339933;">29.6&nbsp;%</span></td>
+<span style="color:#339933;">29.3&nbsp;%</span></td>
 <td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">223</span><br>
-<span style="color:#339933;">25&nbsp;%</span></td>
+<span style="color:#339933;">24.7&nbsp;%</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left; padding: 0.2cm; vertical-align: middle;">justicia perfecta</td>
-<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">311</span><br>
-<span style="color:#339933;">69.6&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">266</span><br>
-<span style="color:#339933;">59.6&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">577</span><br>
-<span style="color:#339933;">64.6&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">347</span><br>
+<span style="color:#339933;">76.9&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">312</span><br>
+<span style="color:#339933;">69.2&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">659</span><br>
+<span style="color:#339933;">73.1&nbsp;%</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left; padding: 0.2cm; vertical-align: middle;">injusticia<br>
 sobre-recompensa</td>
-<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">45</span><br>
-<span style="color:#339933;">10.1&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">48</span><br>
-<span style="color:#339933;">10.8&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">93</span><br>
-<span style="color:#339933;">10.4&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">13</span><br>
+<span style="color:#339933;">2.9&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">7</span><br>
+<span style="color:#339933;">1.6&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">20</span><br>
+<span style="color:#339933;">2.2&nbsp;%</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8; font-weight: bolder; font-style: italic; vertical-align: middle;">Total</td>
-<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">447</span><br>
+<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">451</span><br>
 <span style="color:#339933;">100&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">446</span><br>
+<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">451</span><br>
 <span style="color:#339933;">100&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">893</span><br>
+<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">902</span><br>
 <span style="color:#339933;">100&nbsp;%</span></td>
 </tr>
 </tbody>
@@ -1097,7 +1150,7 @@ sobre-recompensa</td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota</td>
+<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota_ch</td>
 <td colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal;">educ_max</td>
 <td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; font-weight: bolder; font-style: italic; border-bottom: 1px solid; background-color: #f8f8f8;">Total</td>
 </tr>
@@ -1168,7 +1221,7 @@ sobre-recompensa</td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota_tiempo</td>
+<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota_tiempo_ch</td>
 <td colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal;">educ_max</td>
 <td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; font-weight: bolder; font-style: italic; border-bottom: 1px solid; background-color: #f8f8f8;">Total</td>
 </tr>
@@ -1181,38 +1234,38 @@ menos</td>
 <td style="text-align: left; padding: 0.2cm; vertical-align: middle;">injusticia<br>
 sub-recompensa</td>
 <td style="text-align: center; padding: 0.2cm;"><span style="color:black;">74</span><br>
-<span style="color:#339933;">27&nbsp;%</span></td>
+<span style="color:#339933;">26.9&nbsp;%</span></td>
 <td style="text-align: center; padding: 0.2cm;"><span style="color:black;">117</span><br>
-<span style="color:#339933;">25.9&nbsp;%</span></td>
+<span style="color:#339933;">25.7&nbsp;%</span></td>
 <td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">191</span><br>
-<span style="color:#339933;">26.3&nbsp;%</span></td>
+<span style="color:#339933;">26.2&nbsp;%</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left; padding: 0.2cm; vertical-align: middle;">justicia perfecta</td>
-<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">175</span><br>
-<span style="color:#339933;">63.9&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">281</span><br>
-<span style="color:#339933;">62.3&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">456</span><br>
-<span style="color:#339933;">62.9&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">192</span><br>
+<span style="color:#339933;">69.8&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">330</span><br>
+<span style="color:#339933;">72.5&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">522</span><br>
+<span style="color:#339933;">71.5&nbsp;%</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left; padding: 0.2cm; vertical-align: middle;">injusticia<br>
 sobre-recompensa</td>
-<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">25</span><br>
-<span style="color:#339933;">9.1&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">53</span><br>
-<span style="color:#339933;">11.8&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">78</span><br>
-<span style="color:#339933;">10.8&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">9</span><br>
+<span style="color:#339933;">3.3&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">8</span><br>
+<span style="color:#339933;">1.8&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">17</span><br>
+<span style="color:#339933;">2.3&nbsp;%</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8; font-weight: bolder; font-style: italic; vertical-align: middle;">Total</td>
-<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">274</span><br>
+<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">275</span><br>
 <span style="color:#339933;">100&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">451</span><br>
+<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">455</span><br>
 <span style="color:#339933;">100&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">725</span><br>
+<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">730</span><br>
 <span style="color:#339933;">100&nbsp;%</span></td>
 </tr>
 </tbody>
@@ -1234,7 +1287,7 @@ sobre-recompensa</td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota</td>
+<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota_ch</td>
 <td colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal;">libros_hogar</td>
 <td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; font-weight: bolder; font-style: italic; border-bottom: 1px solid; background-color: #f8f8f8;">Total</td>
 </tr>
@@ -1305,7 +1358,7 @@ sobre-recompensa</td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota_tiempo</td>
+<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota_tiempo_ch</td>
 <td colspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal;">libros_hogar</td>
 <td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; font-weight: bolder; font-style: italic; border-bottom: 1px solid; background-color: #f8f8f8;">Total</td>
 </tr>
@@ -1317,38 +1370,38 @@ sobre-recompensa</td>
 <td style="text-align: left; padding: 0.2cm; vertical-align: middle;">injusticia<br>
 sub-recompensa</td>
 <td style="text-align: center; padding: 0.2cm;"><span style="color:black;">140</span><br>
-<span style="color:#339933;">24.1&nbsp;%</span></td>
+<span style="color:#339933;">23.9&nbsp;%</span></td>
 <td style="text-align: center; padding: 0.2cm;"><span style="color:black;">80</span><br>
-<span style="color:#339933;">25.9&nbsp;%</span></td>
+<span style="color:#339933;">25.6&nbsp;%</span></td>
 <td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">220</span><br>
-<span style="color:#339933;">24.7&nbsp;%</span></td>
+<span style="color:#339933;">24.5&nbsp;%</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left; padding: 0.2cm; vertical-align: middle;">justicia perfecta</td>
-<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">379</span><br>
-<span style="color:#339933;">65.3&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">197</span><br>
-<span style="color:#339933;">63.8&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">576</span><br>
-<span style="color:#339933;">64.8&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">434</span><br>
+<span style="color:#339933;">74.1&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">224</span><br>
+<span style="color:#339933;">71.8&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">658</span><br>
+<span style="color:#339933;">73.3&nbsp;%</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left; padding: 0.2cm; vertical-align: middle;">injusticia<br>
 sobre-recompensa</td>
-<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">61</span><br>
-<span style="color:#339933;">10.5&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">32</span><br>
-<span style="color:#339933;">10.4&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">93</span><br>
-<span style="color:#339933;">10.5&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">12</span><br>
+<span style="color:#339933;">2&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm;"><span style="color:black;">8</span><br>
+<span style="color:#339933;">2.6&nbsp;%</span></td>
+<td style="text-align: center; padding: 0.2cm; background-color: #f8f8f8;"><span style="color:black;">20</span><br>
+<span style="color:#339933;">2.2&nbsp;%</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8; font-weight: bolder; font-style: italic; vertical-align: middle;">Total</td>
-<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">580</span><br>
+<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">586</span><br>
 <span style="color:#339933;">100&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">309</span><br>
+<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">312</span><br>
 <span style="color:#339933;">100&nbsp;%</span></td>
-<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">889</span><br>
+<td style="text-align: center; padding: 0.2cm; border-bottom: double; background-color: #f8f8f8;"><span style="color:black;">898</span><br>
 <span style="color:#339933;">100&nbsp;%</span></td>
 </tr>
 </tbody>
@@ -1363,6 +1416,15 @@ sobre-recompensa</td>
 <div class="cell">
 <div class="cell-output-display">
 <div>
+<figure class="figure">
+<p><img src="analisis_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
 <table data-quarto-postprocess="true" class="table table-sm table-striped small">
 <colgroup>
 <col style="width: 16%">
@@ -1374,7 +1436,7 @@ sobre-recompensa</td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota</td>
+<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota_ch</td>
 <td colspan="4" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal;">En Chile, las<br>
 personas son<br>
 recompensadas por su<br>
@@ -1461,7 +1523,7 @@ sobre-recompensa</td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota</td>
+<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota_ch</td>
 <td colspan="4" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal;">En Chile, las<br>
 personas son<br>
 recompensadas por su<br>
@@ -1547,7 +1609,7 @@ sobre-recompensa</td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota</td>
+<td rowspan="2" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; border-bottom: 1px solid;">justicia_nota_ch</td>
 <td colspan="4" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal;">En Chile, todas las<br>
 personas obtienen lo<br>
 que merecen</td>
@@ -1619,64 +1681,338 @@ sobre-recompensa</td>
 </div>
 </div>
 <p>Percepción en la <strong>escuela</strong>:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analisis_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="matriz" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="matriz"><span class="header-section-number">2.3</span> Matriz</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analisis_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
-<section id="conclusiones-preliminares" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="conclusiones-preliminares"><span class="header-section-number">3</span> Conclusiones preliminares</h2>
-<section id="descriptivos-sociodemográficos" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="descriptivos-sociodemográficos"><span class="header-section-number">3.1</span> Descriptivos sociodemográficos</h3>
-<p>Previamente:</p>
-<ul>
-<li><p>En general, los/as estudiantes evaluan una sensación de <strong>justicia perfecta</strong> en sus notas (79,7%).</p></li>
-<li><p>Además, la muestra de estudiantes se presenta pareja para las características entorno al género y el curso. Pero desigual en la cantidad de libros en el hogar y el nivel educacional máximo alcanzado por sus padres. Específicamente, en su mayoría tienen <strong>menos de 25 libros en sus hogares</strong> (65,3%) y sus padres cuentan con <strong>estudios superiores</strong> (62,3%).</p></li>
-</ul>
-<p>Bajo ese contexto, se tiene lo siguiente:</p>
-<ol type="1">
-<li><p>Quienes evaluan una sensación de <strong>injusticia por sub-recompensa</strong>:</p>
-<p>corresponden a</p>
-<ul>
-<li><p>Mujeres (13,7%)</p></li>
-<li><p>Estudiantes de media (17,1%)</p></li>
-<li><p>Padres con estudios superiores (14,1%)</p></li>
-<li><p>Más de 25 libros en el hogar (14,7%)</p></li>
-</ul></li>
-<li><p>Quienes evaluan una sensación de <strong>justicia perfecta</strong>:</p>
-<p>corresponden a</p>
-<ul>
-<li><p>Mujeres (81,4%)</p></li>
-<li><p>Estudiantes de básica (82,5%)</p></li>
-<li><p>Padres con enseñanza media o menos (80,4%)</p></li>
-<li><p>Misma cantidad para ambas categorías referidas a la cantidad de libros en el hogar (79,8%)</p></li>
-</ul></li>
-<li><p>Quienes evaluan una sensación de <strong>injusticia por sobre-recompensa</strong>:</p>
-<p>corresponden a</p>
-<ul>
-<li><p>Hombres (7,5%)</p></li>
-<li><p>Estudiantes de básica (8,2%)</p></li>
-<li><p>Padres con estudios superiores (7,9%)</p></li>
-<li><p>Menos de 25 libros en su hogar (7,9%)</p></li>
-</ul></li>
-</ol>
-<p>En el caso de la evaluación de injusticia, se tiene en común en ambas que en su mayoría el nivel educacional máximo alcanzado por sus padres son estudios superiores. A diferencia de quienes evaluan una sensación de justicia.</p>
+<section id="modelos" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="modelos"><span class="header-section-number">3</span> Modelos</h2>
+<section id="modelo-regresión-lineal-múltiple" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="modelo-regresión-lineal-múltiple"><span class="header-section-number">3.1</span> Modelo regresión lineal múltiple</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">&nbsp;</td>
+<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">Modelo 1</td>
+<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">Modelo 2</td>
+<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">Modelo 3</td>
+<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">Modelo 4</td>
+<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">Modelo 5</td>
+<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">Modelo 6</td>
+<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">Modelo 7</td>
+</tr>
+<tr class="even">
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">Predictores</td>
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">β</td>
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">β</td>
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">β</td>
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">β</td>
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">β</td>
+<td style="text-align: center;">β</td>
+<td style="text-align: center;">β</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">(Intercept)</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.02 <sup></sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.02 <sup></sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">-0.00 <sup></sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.01 <sup></sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">-0.19 <sup>***</sup></td>
+<td style="text-align: center;">-0.21 <sup>***</sup></td>
+<td style="text-align: center;">-0.24 <sup>***</sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">genero ES</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">-0.02 <sup>*</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">-0.02 <sup>*</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">-0.02 <sup>*</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">-0.02 <sup>*</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">-0.02 <sup>**</sup></td>
+<td style="text-align: center;">-0.02 <sup>**</sup></td>
+<td style="text-align: center;">-0.02 <sup>*</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">curso estudiante</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">-0.00 <sup></sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">-0.00 <sup></sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">-0.00 <sup></sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.00 <sup></sup></td>
+<td style="text-align: center;">0.00 <sup></sup></td>
+<td style="text-align: center;">0.01 <sup></sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">educ max</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.01 <sup>*</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.02 <sup>*</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.01 <sup></sup></td>
+<td style="text-align: center;">0.01 <sup></sup></td>
+<td style="text-align: center;">0.01 <sup></sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">libros hogar</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">-0.01 <sup>*</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">-0.02 <sup>**</sup></td>
+<td style="text-align: center;">-0.02 <sup>**</sup></td>
+<td style="text-align: center;">-0.02 <sup>**</sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">rendimiento</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.04 <sup>***</sup></td>
+<td style="text-align: center;">0.04 <sup>***</sup></td>
+<td style="text-align: center;">0.04 <sup>***</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">notas esfuerzo</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: center;">0.01 <sup>*</sup></td>
+<td style="text-align: center;">0.01 <sup></sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">social merito percep ES</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.01 <sup>*</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">Observations</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">675</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">675</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">675</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">675</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">675</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">675</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">675</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">R<sup>2</sup> / R<sup>2</sup> adjusted</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">0.009 / 0.008</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">0.009 / 0.006</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">0.016 / 0.011</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">0.021 / 0.015</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">0.091 / 0.084</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">0.096 / 0.088</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">0.102 / 0.092</td>
+</tr>
+<tr class="odd">
+<td colspan="8" style="text-align: right; font-style: italic; border-top: double black;">* p&lt;0.05&nbsp;&nbsp;&nbsp;** p&lt;0.01&nbsp;&nbsp;&nbsp;*** p&lt;0.001</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="analisis_files/figure-html/unnamed-chunk-22-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="comparación-descriptivos-sociodemográficos" class="level3" data-number="3.2">
-<h3 data-number="3.2" class="anchored" data-anchor-id="comparación-descriptivos-sociodemográficos"><span class="header-section-number">3.2</span> Comparación descriptivos sociodemográficos</h3>
-<p>Al cruzar las vairables sociodemográficas con el índice de evaluación de justicia construido con la pregunta referida al tiempo dedicado al estudio, se observa que en los perfiles descritos para cada evaluación de justicia cambian las siguientes categorías:</p>
-<ol type="1">
-<li><p>Sensación de <strong>injusticia por sub-recompensa</strong>:</p>
-<ul>
-<li>Nivel educacional máximo alcanzado por los padres: enseñanza media o menos</li>
-</ul></li>
-<li><p>Sensacion de <strong>justicia perfecta</strong>:</p>
-<ul>
-<li><p>Género: hombre</p></li>
-<li><p>Cantidad de libros en el hogar: menos de 25 libros</p></li>
-</ul></li>
-<li><p>Sensación de <strong>injusticia por sobre-recompensa</strong>:</p>
-<ul>
-<li>Curso del estudiante: media</li>
-</ul></li>
-</ol>
+<section id="modelo-regresión-logistica-ordinal" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="modelo-regresión-logistica-ordinal"><span class="header-section-number">3.2</span> Modelo regresión logistica ordinal</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">&nbsp;</td>
+<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">Modelo 1</td>
+<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">Modelo 2</td>
+<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">Modelo 3</td>
+<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">Modelo 4</td>
+<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">Modelo 5</td>
+<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">Modelo 6</td>
+</tr>
+<tr class="even">
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">Predictores</td>
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">β</td>
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">β</td>
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">β</td>
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">β</td>
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">β</td>
+<td style="text-align: center;">β</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">injusticia sub-recompensa|justicia perfecta</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.14 <sup>***</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.10 <sup>***</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.12 <sup>***</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.11 <sup>***</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">6.18 <sup>*</sup></td>
+<td style="text-align: center;">9.89 <sup>*</sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">justicia perfecta|injusticia sobre-recompensa</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">13.94 <sup>***</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">10.85 <sup>***</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">11.59 <sup>***</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">10.90 <sup>***</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">717.50 <sup>***</sup></td>
+<td style="text-align: center;">1193.18 <sup>***</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">genero ES: Mujer</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.84 <sup></sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.82 <sup></sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.89 <sup></sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.89 <sup></sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.84 <sup></sup></td>
+<td style="text-align: center;">0.86 <sup></sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">curso estudiante: Media</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.58 <sup>**</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.62 <sup>*</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.63 <sup>*</sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.70 <sup></sup></td>
+<td style="text-align: center;">0.73 <sup></sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">educ max: Estudios<br>
+superiores</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">1.08 <sup></sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">1.13 <sup></sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.97 <sup></sup></td>
+<td style="text-align: center;">1.01 <sup></sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">libros hogar: Más de 25<br>
+libros</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.69 <sup></sup></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.61 <sup>*</sup></td>
+<td style="text-align: center;">0.61 <sup>*</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">4.¿Cuál fue tu promedio<br>
+final de notas el año<br>
+pasado?Si no lo recuerdas<br>
+exactamente,indica una<br>
+nota aproximada(entre 1.0<br>
+y 7.0)</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">2.02 <sup>***</sup></td>
+<td style="text-align: center;">2.05 <sup>***</sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">social merito percep ES:<br>
+social merito percep ES 2</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: center;">1.46 <sup></sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">social merito percep ES:<br>
+social merito percep ES 3</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: center;">1.78 <sup></sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">social merito percep ES:<br>
+social merito percep ES 4</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: center;">1.62 <sup></sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">Observations</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">857</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">857</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">696</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">695</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">695</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">692</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">R<sup>2</sup> Nagelkerke</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">0.135</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">0.149</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">0.410</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">0.421</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">0.446</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">0.457</td>
+</tr>
+<tr class="odd">
+<td colspan="7" style="text-align: right; font-style: italic; border-top: double black;">* p&lt;0.05&nbsp;&nbsp;&nbsp;** p&lt;0.01&nbsp;&nbsp;&nbsp;*** p&lt;0.001</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</div>
 </section>
 </section>
 

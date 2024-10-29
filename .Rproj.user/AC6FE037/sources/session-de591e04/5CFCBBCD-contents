@@ -1,0 +1,100 @@
+# Actividad en R 3 --------------------------------------------------------
+
+## Estrategias de Investigación Cuantitativa 2022, Universidad de Chile.
+## Profesor Pablo Pérez Ahumada
+## Apoyo docente: Nicolás Godoy
+## Ayudantes: Francisco Arévalo, Francisca Espillco, Isadora González y M.J. 
+## Meléndez
+
+
+## Cargar paquetes ---------------------------------------------------------
+#library(pacman)
+pacman::p_load(tidyverse, #Conjunto de paquetes, sobre todo dplyr
+               haven, #Abrir .dta
+               car) #Para recodificar
+
+## Cargar datos ------------------------------------------------------------
+
+data <- read_dta("input/data/latino2020.dta", encoding = "UTF-8")
+
+## Recodificar -------------------------------------------------------------
+
+data = data %>% 
+  select(sexo,
+         #Variables Likert 1-4 donde valor más bajo es mayor grado de acuerdo
+         apoyo1 = p39n_a, #Los inmigrantes son buenos para la economía del país
+         apoyo2 = p39st_b, #Los inmigrantes vienen a competir por nuestros puestos de trabajo
+         apoyo3 = p39n_c, #Los inmigrantes causan un aumento del crimen
+         apoyo4 = p39n_d, #Los inmigrantes mejoran nuestra sociedad con ideas y cultura 
+         apoyo5 = p39n_e, #Los inmigrantes son una carga para el estado
+         apoyo6 = p39n_f, #Los inmigrantes le dan al paísmás de lo que reciben
+         apoyo7 = p39n_g,# Nuestro país debería ayudar a los inmigrantes que sufren persecución política 
+         apoyo8 = p39n_h) %>%  #Los inmigrantes deberían tener el mismo acceso a la salud, educación y vivienda
+  mutate_all(~(as.numeric(.))) %>% #Transformamos en numeric para recodificar
+  mutate_at(vars(starts_with("apoyo")), #A las variables que empiezan por "apoyo"
+            ~(ifelse(. == -5, NA, .))) %>% #Recodificamos todos los valores -2 como NA
+  mutate_at(vars(apoyo1, apoyo4, apoyo6, apoyo7, apoyo8), #A estas variables
+            ~(5-.)) %>%  #Invertir valores: valor más alto es más pro inmigrantes
+  mutate(sexo = car::recode(.$sexo, "1 = 'Hombre'; 2 = 'Mujer'")) %>% #Recodificamos sexo como chr
+  na.omit() #Eliminamos todas las filas con NA
+
+## Explorar datos ----------------------------------------------------------
+
+## Descriptivos ------------------------------------------------------------
+data %>% 
+  summarise(apoyo1 = mean(apoyo1),
+            apoyo2 = mean(apoyo2),
+            apoyo3 = mean(apoyo3),
+            apoyo4 = mean(apoyo4),
+            apoyo5 = mean(apoyo5),
+            apoyo6 = mean(apoyo6),
+            apoyo7 = mean(apoyo7),
+            apoyo8 = mean(apoyo8))
+
+table(data$sexo)
+
+data %>% 
+  group_by(sexo) %>% 
+  summarise(apoyo1 = mean(apoyo1),
+            apoyo2 = mean(apoyo2),
+            apoyo3 = mean(apoyo3),
+            apoyo4 = mean(apoyo4),
+            apoyo5 = mean(apoyo5),
+            apoyo6 = mean(apoyo6),
+            apoyo7 = mean(apoyo7),
+            apoyo8 = mean(apoyo8))
+
+## Estimar correlación para construir índice -------------------------------
+
+cor(data %>% select(2:9))
+
+## Alfa de Chronbach para medir consistencia interna
+
+alpha(data %>% select(2:9)) #.72
+
+# Validez: unidimensionalidad ----------------------------------------------------
+
+## Análisis factorial de componentes principales
+
+# Su objetivo es analizar la varianza total del conjunto de variables observadas,
+# a partir de lo cual es posible determinar las dimensiones básicas o "componentes"
+# que las definen (Cea D'Ancona, 2002)
+# Permite reemplazar un gran número de variables correlacionadas a un número más pequeño
+# de variables ortogonales (no relacionadas entre sí) denominadas componentes principales
+# El análisis factorial permite validar que las escalas construidas son unidimensionales
+
+# Crear el análisis factorial ---------------------------------------------
+
+fa = princomp(data %>% select(2:9), cor = T, scores = T)
+summary(fa)
+
+loadings(fa)
+
+#Componente 1: apoyo1, apoyo4, apoyo6, apoyo7 y apoyo8
+#Componente 2: apoyo2, apoyo3 y apoyo 5
+
+# Gráfico de sedimentación (scree) ----------------------------------------
+plot(fa)
+screeplot(fa, type = "line", 
+          main = "Gráfico de sedimentación")
+

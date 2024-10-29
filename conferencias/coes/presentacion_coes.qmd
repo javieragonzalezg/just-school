@@ -1,0 +1,8 @@
+---
+title: "Percepciones de Justicia en la Evaluación Escolar: Un Estudio Exploratorio en Estudiantes Chilenos"
+author: "Equipo EDUMER"
+format: revealjs
+editor: visual
+---
+
+## 
