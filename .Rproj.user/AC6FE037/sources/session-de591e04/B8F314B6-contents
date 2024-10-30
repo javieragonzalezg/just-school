@@ -1,9 +1,0 @@
-as.numeric(datos$p20)
-class(datos$p20_numeric)
-
-datos <- datos %>% as.numeric(as.factor(datos$p20))
-
-cor <- datos %>% select(p20, )
-
-datos$p20_numeric <- as.numeric(as_factor(datos$p20))
-
